@@ -16,7 +16,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutDoor-Tests", "OutDoor-Tests\OutDoor-Tests.csproj", "{20A81FF2-1EA9-4DA3-B97C-1FCEDBB5FA40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutDoor-Tests", "OutDoor-Tests\OutDoor-Tests.csproj", "{20A81FF2-1EA9-4DA3-B97C-1FCEDBB5FA40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{3FB606CB-DEEC-4DF6-8BEC-E928B81CE42E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{802BD3EC-A7E1-4EE1-AB9D-DEDB6A085FE9}"
+	ProjectSection(SolutionItems) = preProject
+		main_outdoorbackend.yaml = main_outdoorbackend.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +54,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{802BD3EC-A7E1-4EE1-AB9D-DEDB6A085FE9} = {3FB606CB-DEEC-4DF6-8BEC-E928B81CE42E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {72F2E192-12D9-4C7A-9908-13D83C544630}
