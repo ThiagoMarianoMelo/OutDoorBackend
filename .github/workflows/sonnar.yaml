@@ -45,7 +45,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"sonar-cloud-demonstration" /o:"sonarclouddemonstration" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
+          SonarScanner.MSBuild.exe begin /k:"sonar-cloud-demonstration" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" 
           dotnet build --no-incremental
           dotnet test --collect "Code Coverage"
-          .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
+          SonarScanner.MSBuild.exe end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
