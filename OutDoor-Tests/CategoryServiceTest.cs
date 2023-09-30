@@ -27,7 +27,7 @@ namespace OutDoor_Tests
             var categoriesRecives = await categoryService.getAllCategories();
 
             //Assert
-            Assert.Null(categoriesRecives);
+            Assert.NotNull(categoriesRecives);
             Assert.Equal("123", categoriesRecives == null ? "error" : categoriesRecives.First().Id);
             Assert.Equal("TestCateogry", categoriesRecives == null ? "error" : categoriesRecives.First().Name);
             Assert.Equal<int>(1, categoriesRecives == null ? 0 : categoriesRecives.Count());
