@@ -58,6 +58,7 @@ namespace OutDoor_Tests
                 Email = "EmailInUse@Email.com",
                 Password = "PasswordTest123",
                 UserType = "client"
+
             }));
         }
 
