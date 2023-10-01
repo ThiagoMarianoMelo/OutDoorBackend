@@ -14,7 +14,7 @@ namespace OutDoor_Backend.Controllers
     public class CommentController : ControllerBase
     {
         private readonly ICommentService CommentService;
-        private IPostService PostService;
+        private readonly IPostService PostService;
         private IRabbitMQService RabbitMQService;
 
         public CommentController(ICommentService commentService, IRabbitMQService rabbitMQService, IPostService postService)
